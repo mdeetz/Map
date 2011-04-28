@@ -15,6 +15,7 @@
 		2899E5220DE3E06400AC0155 /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* MapViewController.xib */; };
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
 		28D7ACF80DDB3853001CB0EB /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* MapViewController.m */; };
+		4211D0F4136A0087006FBE04 /* german.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4211D0F3136A0087006FBE04 /* german.txt */; };
 		8CC41052136A008200918476 /* Grace.txt in Resources */ = {isa = PBXBuildFile; fileRef = 8CC41051136A008200918476 /* Grace.txt */; };
 		DF89385B1369FD33001A79CD /* Marcy.txt in Resources */ = {isa = PBXBuildFile; fileRef = DF89385A1369FD33001A79CD /* Marcy.txt */; };
 /* End PBXBuildFile section */
@@ -32,6 +33,7 @@
 		28D7ACF70DDB3853001CB0EB /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* Map_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Map_Prefix.pch; sourceTree = "<group>"; };
+		4211D0F3136A0087006FBE04 /* german.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = german.txt; sourceTree = "<group>"; };
 		8CC41051136A008200918476 /* Grace.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Grace.txt; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Map-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Map-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 		DF89385A1369FD33001A79CD /* Marcy.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Marcy.txt; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 				19C28FACFE9D520D11CA2CBB /* Products */,
 				DF89385A1369FD33001A79CD /* Marcy.txt */,
 				8CC41051136A008200918476 /* Grace.txt */,
+				4211D0F3136A0087006FBE04 /* german.txt */,
 			);
 			name = CustomTemplate;
 			sourceTree = "<group>";
@@ -165,6 +168,7 @@
 				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
 				2899E5220DE3E06400AC0155 /* MapViewController.xib in Resources */,
 				DF89385B1369FD33001A79CD /* Marcy.txt in Resources */,
+				4211D0F4136A0087006FBE04 /* german.txt in Resources */,
 				8CC41052136A008200918476 /* Grace.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
