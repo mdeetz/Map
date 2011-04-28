@@ -311,7 +311,7 @@
 							<real>185</real>
 						</array>
 						<key>RubberWindowFrame</key>
-						<string>86 234 810 487 0 0 1280 778 </string>
+						<string>540 -59 810 487 0 0 1280 778 </string>
 					</dict>
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
@@ -350,7 +350,7 @@
 								<key>Frame</key>
 								<string>{{0, 0}, {603, 0}}</string>
 								<key>RubberWindowFrame</key>
-								<string>86 234 810 487 0 0 1280 778 </string>
+								<string>540 -59 810 487 0 0 1280 778 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
@@ -375,7 +375,7 @@
 										<key>Frame</key>
 										<string>{{10, 27}, {603, 414}}</string>
 										<key>RubberWindowFrame</key>
-										<string>86 234 810 487 0 0 1280 778 </string>
+										<string>540 -59 810 487 0 0 1280 778 </string>
 									</dict>
 									<key>Module</key>
 									<string>XCDetailModule</string>
@@ -614,7 +614,7 @@
 	<key>StatusbarIsVisible</key>
 	<true/>
 	<key>TimeStamp</key>
-	<real>325710409.39113498</real>
+	<real>325712857.57027102</real>
 	<key>ToolbarConfigUserDefaultsMinorVersion</key>
 	<string>2</string>
 	<key>ToolbarDisplayMode</key>
@@ -634,7 +634,7 @@
 		<string>/Users/marcydeetz/Desktop/Map/Map.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
-	<string>86 234 810 487 0 0 1280 778 </string>
+	<string>540 -59 810 487 0 0 1280 778 </string>
 	<key>WindowToolsV3</key>
 	<array>
 		<dict>
