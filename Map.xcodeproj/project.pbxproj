@@ -73,13 +73,13 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
-				8CC41051136A008200918476 /* Grace.txt */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
 				DF89385A1369FD33001A79CD /* Marcy.txt */,
+				8CC41051136A008200918476 /* Grace.txt */,
 			);
 			name = CustomTemplate;
 			sourceTree = "<group>";
