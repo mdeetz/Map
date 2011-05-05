@@ -1,2 +1,5 @@
 build/
-Map.xcodeproj/Gandrade.pbxuser Map.xcodeproj/marcydeetz.pbxuser
+Map.xcodeproj/*.pbxuser
+Map.xcodeproj/*.perspectivev3
+Map.xcodeproj/*.mode1v3
+.DS_Store
