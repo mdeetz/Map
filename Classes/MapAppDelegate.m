@@ -8,12 +8,12 @@
 
 #import "MapAppDelegate.h"
 #import "MapViewController.h"
+#import "Location.h"
 
 @implementation MapAppDelegate
 
 @synthesize window;
 @synthesize viewController;
-
 
 #pragma mark -
 #pragma mark Application lifecycle
@@ -23,6 +23,16 @@
     // Override point for customization after application launch.
 
     // Add the view controller's view to the window and display.
+	
+	
+	//  You will replace this code with the code from the plist
+	Location *loc1 = [[Location alloc] initWithName:@"GMU" andZip:@"22030"];
+	Location *loc2 = [[Location alloc] initWithName:@"Reston" andZip:@"20191"];
+	
+	NSArray *array = [NSArray arrayWithObjects:loc1, loc2, nil];
+	
+	viewController.locations = array;	
+	viewController.title = @"WeatherMap";
     [self.window addSubview:viewController.view];
     [self.window makeKeyAndVisible];
 

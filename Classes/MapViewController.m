@@ -8,16 +8,34 @@
 
 #import "MapViewController.h"
 #import "Location.h"
+#import "MapEditorViewController.h"
 
 @implementation MapViewController
 
 @synthesize mapView;
 
-@synthesize city;
-@synthesize state;
-@synthesize zipcode;
-@synthesize location;
+@synthesize locations;
 
+
+- (IBAction)edit {
+	
+	NSLog(@"Inside Edit method");	
+	
+	NSLog(@"Number of locations %d", [locations count]);
+	MapEditorViewController *mevc = [[MapEditorViewController alloc] init];
+	//[self.navigationController pushViewController:mevc animated:YES];
+	[self presentModalViewController:mevc animated:YES];
+	[mevc release];
+	
+	/**
+	 
+	 1. alloc init an instance of MapEditorViewController
+	 2. tell the nav controller to push this instance of the MapEditorViewController
+	
+	 **/
+	
+	
+} 
 /*
 // The designated initializer. Override to perform setup that is required before the view is loaded.
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {

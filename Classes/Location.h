@@ -15,24 +15,26 @@
 
 
 #import <Foundation/Foundation.h>
+#import <MapKit/MapKit.h>
 
 
 @interface Location : NSObject {
 	
-	NSString *city;
-	NSString *state;
-	NSString *zipcode;  // ?? should this be a string or number?
+	NSString *name;
+	NSString *zipcode;
+	CLLocation *latlong;
 	
 	
 }
 
-- (id)initWithTitle:(NSString *)newCity
-	 boxOfficeGross:(NSString *)newState
-			summary:(NSString *)newZipcode;
+- (id)initWithName:(NSString *)name
+			andZip:(NSString *)zipCode;
+			
 
-@property(nonatomic, copy) NSString *city;
-@property(nonatomic, copy) NSString *state;
+@property(nonatomic, copy) NSString *name;
 @property(nonatomic, copy) NSString *zipcode;
+@property(nonatomic, copy) CLLocation *latlong;
+
 
 
 @end

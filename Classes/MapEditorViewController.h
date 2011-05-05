@@ -7,13 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <MapKit/MapKit.h>
+
 
 @class Location;
 
 @interface MapEditorViewController : UITableViewController <UITextFieldDelegate> {
-	
-	MKMapEditorView *mapEditorView;
 	
 	UITextField *city;
 	UITextField *state;
@@ -21,8 +19,6 @@
 	Location *location;
 	
 }
-
-@property (nonatomic, retain) IBOutlet MKMapEditorView *mapEditorView;
 
 @property (nonatomic, retain) IBOutlet UITextField *city;
 @property (nonatomic, retain) IBOutlet UITextField *state;

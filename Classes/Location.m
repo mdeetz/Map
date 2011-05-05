@@ -12,25 +12,23 @@
 
 @implementation Location
 
-@synthesize city;
-@synthesize state;
+@synthesize name;
 @synthesize zipcode;
+@synthesize latlong;
 
--(id)initWithTitle:(NSString *)newCity
-	boxOfficeGross:(NSString *)newState 
-		   summary:(NSString *)newZipcode{
-	self= [super init];
-	if(nil !=self) {
-		self.city = newCity;
-		self.state = newState;
-		self.zipcode = newZipcode;
-	}
+- (id)initWithName:(NSString *)newName
+			andZip:(NSString *)zipCode {
+	
+	self.name = newName;
+	self.zipcode = zipCode;
+	
 	return self;
+	
 }
 
+
 -(void) dealloc {
-	self.city = nil;
-	self.state = nil;
+	self.name = nil;
 	self.zipcode = nil;
 	[super dealloc];
 }
