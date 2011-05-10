@@ -9,6 +9,7 @@
 #import "MapAppDelegate.h"
 #import "MapViewController.h"
 #import "Location.h"
+#import <CoreLocation/CoreLocation.h>
 
 @implementation MapAppDelegate
 
@@ -27,11 +28,16 @@
 	
 	//  You will replace this code with the code from the plist
 	Location *loc1 = [[Location alloc] initWithName:@"GMU" andZip:@"22030"];
-	Location *loc2 = [[Location alloc] initWithName:@"Reston" andZip:@"20191"];
+	CLLocation *cl1 = [[CLLocation alloc] initWithLatitude:+38.8461111 longitude:-77.3066667];
+	loc1.latlong = cl1;
 	
-	NSArray *array = [NSArray arrayWithObjects:loc1, loc2, nil];
+	//Location *loc2 = [[Location alloc] initWithName:@"Reston" andZip:@"20191"];
 	
-	viewController.locations = array;	
+	
+	
+	NSMutableArray *locations = [NSMutableArray arrayWithObjects:loc1, nil];
+	
+	viewController.locations = locations;	
 	viewController.title = @"WeatherMap";
     [self.window addSubview:viewController.view];
     [self.window makeKeyAndVisible];

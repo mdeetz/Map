@@ -22,7 +22,8 @@
 	NSLog(@"Inside Edit method");	
 	
 	NSLog(@"Number of locations %d", [locations count]);
-	MapEditorViewController *mevc = [[MapEditorViewController alloc] init];
+	MapEditorViewController *mevc = [[MapEditorViewController alloc] initWithNibName:@"MapEditorViewController" bundle:nil];
+	mevc.locations = self.locations;
 	//[self.navigationController pushViewController:mevc animated:YES];
 	[self presentModalViewController:mevc animated:YES];
 	[mevc release];
@@ -69,6 +70,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 	mapView.showsUserLocation = YES; 
+	NSLog(@"Inside viewDidLoad: number of locations is %d", [locations count]);
+	
+	
+	Location *loc = [locations objectAtIndex:0];
+	MKPointAnnotation *point = [[MKPointAnnotation alloc] init];
+	point.title = loc.name;
+	point.coordinate = loc.latlong.coordinate;
+	
+	
+	[mapView addAnnotation:point];
 //*** 	self.mapView.mapType = MKMapTypeStandard;
 //*** 	[self location];
 }

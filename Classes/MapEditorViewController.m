@@ -7,18 +7,44 @@
 //
 
 #import "MapEditorViewController.h"
-
+#import "LocationViewController.h"
 
 @implementation MapEditorViewController
 
 
-@synthesize city;
-@synthesize state;
 @synthesize zipcode;
 @synthesize location;
+@synthesize locations;
 
 
+-(IBAction) handleAddTapped {
+	NSLog(@"handleAddTapped");
+	NSLog(@"Locations count is %d", [locations count]);
+	
+	LocationViewController *lvc = [[LocationViewController alloc] initWithNibName:@"LocationViewController" bundle:nil];
+	lvc.locations = self.locations;
+	[self presentModalViewController:lvc animated:YES];
+	
+	
+	/**
+	Location *newLocation = [[Location alloc] init];
+	editingLocation = newLocation;
+	mapEditor.location = editingLocation;
+	[self.navigationController pushViewController:mapEditor animated:YES];
+	[locations addObject:newLocation];
+	NSIndexPath *newLocationPath = 
+	[NSIndexPath indexPathForRow:[locations count]-1 inSection:0];
+	NSMutableArray *newLocationPaths = [NSMutableArray arrayWithObject:newLocationPath];
+	[self.tableView insertRowsAtIndexPaths:newLocationPaths withRowAnimation:NO];
+	[newLocation release];
+	**/
+}
 
+-(IBAction) done {
+	//[self.navigationController popViewControllerAnimated:YES];
+	[self dismissModalViewControllerAnimated:YES];
+	NSLog(@"done");
+}
 
 #pragma mark -
 #pragma mark Initialization

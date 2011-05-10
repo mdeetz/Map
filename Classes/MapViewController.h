@@ -14,14 +14,14 @@
 @interface MapViewController : UIViewController /* <MKMapViewDelegate> */ {
 
 	MKMapView *mapView;
-	NSArray *locations;
+	NSMutableArray *locations;
 	
 }
 
 
 
 @property (nonatomic, retain) IBOutlet MKMapView *mapView;
-@property (nonatomic, retain) NSArray *locations;
+@property (nonatomic, retain) NSMutableArray *locations;
 
 
 - (IBAction)edit;

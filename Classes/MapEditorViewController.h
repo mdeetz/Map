@@ -11,20 +11,20 @@
 
 @class Location;
 
-@interface MapEditorViewController : UITableViewController <UITextFieldDelegate> {
+@interface MapEditorViewController : UIViewController <UITextFieldDelegate> {
 	
-	UITextField *city;
-	UITextField *state;
+	
 	UITextField *zipcode;
 	Location *location;
+	NSMutableArray *locations;
 	
 }
 
-@property (nonatomic, retain) IBOutlet UITextField *city;
-@property (nonatomic, retain) IBOutlet UITextField *state;
 @property (nonatomic, retain) IBOutlet UITextField *zipcode;
 @property (nonatomic, retain) Location *location;
+@property (nonatomic, retain) NSMutableArray *locations;
 
 -(IBAction) done;
+-(IBAction) handleAddTapped;
 
 @end
